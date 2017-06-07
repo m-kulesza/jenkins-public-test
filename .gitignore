@@ -9,6 +9,8 @@
 *.dat
 *.config
 !packages.config
+![Aa]pp.Jenkins.config
+![Ww]eb.Jenkins.config
 
 # Build results
 
