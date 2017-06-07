@@ -7,6 +7,7 @@ namespace WebApplication1.Controllers
         public ActionResult Index()
         {
             var test = "test string TEST BRANCH";
+            var test2 = "test string z brancha dev";
             return View();
         }
 
