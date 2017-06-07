@@ -87,8 +87,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="App.config" />
+  <ItemGroup Condition=" '$(Configuration)' == 'Release' ">
+    <None Include="App.config"/>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <None Include="App.config"/>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(Configuration)' == 'Jenkins' ">
+    <None Include="App.Jenkins.config"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
